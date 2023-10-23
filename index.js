@@ -14,7 +14,7 @@ let changeButton = document.getElementById("new-card-pre-game");
 
 function startGame() {
     gameStart = true;
-    document.getElementById("new-card-pre-game").id = "new-card";
+    // document.getElementById("new-card-pre-game").id = "new-card";
     renderGame();
 }
 
@@ -38,6 +38,7 @@ function newCard() {
     if (gameStart) {
     let card = 3;
     sum += card;
+    cards.push(card);
     renderGame();
     };
 }
