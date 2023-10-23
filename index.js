@@ -23,3 +23,6 @@ function startGame() {
     sumEl.textContent += sum;
 }
 
+function newCard() {
+    console.log("Drawing a new card from the deck");
+}
