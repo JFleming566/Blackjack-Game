@@ -14,12 +14,16 @@ let changeButton = document.getElementById("new-card-pre-game");
 
 function startGame() {
     gameStart = true;
-    // document.getElementById("new-card-pre-game").id = "new-card";
     renderGame();
 }
 
 function renderGame() {
-    cardsEL.textContent = "Cards: " + cards[0] + " " + cards[1];
+    cardsEL.textContent = "Cards: ";
+
+    for (let i = 0; i < cards.length; i++) {
+        cardsEL.textContent += cards[i] + " ";
+    }
+
     sumEl.textContent = "Sum: " + sum;
     if (sum <= 20) {
         message = "Do you want to draw a new card?";
