@@ -8,6 +8,7 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEL = document.getElementById("cards-el");
 // let gameStart = false;
+// Comment
 
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 13) + 1;
